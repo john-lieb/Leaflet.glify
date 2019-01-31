@@ -20793,8 +20793,8 @@ canvasOverlay = function (userDrawFunc, options) {
 };
 
 module.exports = {
-  canvasOverlay,
-  CanvasOverlay
+  canvasOverlay : canvasOverlay,
+  CanvasOverlay : CanvasOverlay
 };
 },{"leaflet":"leaflet"}],12:[function(require,module,exports){
 (function (Buffer){
@@ -21878,11 +21878,11 @@ function pointInCircle(centerPoint, checkPoint, radius) {
 }
 
 module.exports = {
-  defaults,
-  tryFunction,
-  glslMin,
-  pointInCircle,
-  flattenData,
-  latLonToPixel
+  defaults : defaults,
+  tryFunction : tryFunction,
+  glslMin : glslMin,
+  pointInCircle : pointInCircle,
+  flattenData : flattenData,
+  latLonToPixel : latLonToPixel
 };
 },{}]},{},[12]);
