@@ -18,7 +18,9 @@ L.glify.shapes({
   data: geoJson,
   click: function(e, feature) {
     //do something when a shape is clicked
-  }
+  },
+  isPreserveDrawingBufferEnabled: true
+  //PreserveDrawingBuffer on canvas
 });
 ```
 
@@ -29,7 +31,9 @@ L.glify.points({
   data: points,
   click: function(e, point, xy) {
     //do something when a point is clicked
-  }
+  },
+  isPreserveDrawingBufferEnabled: true
+  //PreserveDrawingBuffer on canvas 
 });
 ```
 
