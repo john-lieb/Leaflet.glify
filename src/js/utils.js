@@ -73,10 +73,10 @@ function pointInCircle(centerPoint, checkPoint, radius) {
 }
 
 module.exports = {
-  defaults,
-  tryFunction,
-  glslMin,
-  pointInCircle,
-  flattenData,
-  latLonToPixel
+  defaults:defaults,
+  tryFunction:tryFunction,
+  glslMin:glslMin,
+  pointInCircle:pointInCircle,
+  flattenData:flattenData,
+  latLonToPixel:latLonToPixel
 };

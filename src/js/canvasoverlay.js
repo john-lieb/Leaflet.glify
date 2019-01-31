@@ -140,6 +140,6 @@ canvasOverlay = function (userDrawFunc, options) {
 };
 
 module.exports = {
-  canvasOverlay,
-  CanvasOverlay
+  canvasOverlay:canvasOverlay,
+  CanvasOverlay:CanvasOverlay
 };

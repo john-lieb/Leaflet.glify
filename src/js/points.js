@@ -31,7 +31,12 @@ var Points = function Points(settings) {
     canvas.className += ' ' + settings.className;
   }
 
-  this.gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if(settings.isPreserveDrawingBufferEnabled != null && settings.isPreserveDrawingBufferEnabled == true){
+    this.gl = canvas.getContext('webgl',{preserveDrawingBuffer: true }) || canvas.getContext('experimental-webgl',{preserveDrawingBuffer: true });
+  }
+  else{
+    this.gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  }
 
   this.pixelsToWebGLMatrix = new Float32Array(16);
   this.mapMatrix = mapMatrix();
